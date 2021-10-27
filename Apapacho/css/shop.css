@@ -1,0 +1,224 @@
+.banner-text {
+    height: 4%;
+    width: auto;
+    padding: 4%;
+    margin: 0 auto;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.5em;
+    color: #895575;
+}
+
+.envios-row {
+    background: rgba(170, 152, 169, 0.1);
+    padding: 2% 1%;
+    margin: 0;  
+}
+
+.envios-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.envios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    gap: 15px;
+}
+
+.envios p {
+    align-self: center;
+}
+
+.envios div:first-child {
+    align-self: center;
+    color: #694a31;
+}
+
+.envios .fas, .envios .fab {
+    display: flex;
+    font-size: 3em;
+    margin:auto;
+    padding: 2%;  
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3em;
+    color: #906545;
+    text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 2%;
+}
+
+.grid-productos {
+    padding: 1% auto 2% auto;
+    margin: 2% auto;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-start: 2px;
+    grid-gap: 3px;
+    text-align: center;
+}
+
+.shadow-box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.figure-position {
+    position: relative;
+}
+
+.precio {
+    position: absolute;
+    left:10%;
+    top:80%;
+    margin: 0;
+    width: 80%;
+    background-color:  rgba(196, 187, 144, 0.7);
+    color: #906545;
+    font-size: 2em;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(68, 57, 57, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.texto {
+    display: inline-block;
+    text-align: center;
+    width: 215px;
+    margin: 5% auto;
+    color: #906545;
+    white-space: wrap;  
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .shop-banner {
+        height: 5%;
+        width: auto;
+        padding: 2%;
+        margin: 2% 2% 2% 2%;
+    }
+
+    .banner-text {
+        display: block;
+        align-content: center;
+        justify-content: center;
+        font-size: 2em;
+        width: 95%; 
+    }
+
+    .envios-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2px;
+    }
+
+    .envios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+    }
+
+    .envios p {
+        text-align: center;
+        padding-bottom: 4px;
+    }
+
+    .productos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    } 
+
+    .titulo {
+        white-space: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        font-size: 2em;
+    }    
+}
+
+@media (min-width:250px) and (max-width:601px) {
+
+    .shop-banner {
+        height: 5%;
+        width: auto;
+        padding: 2%;
+        margin: 0;  
+    }
+
+    .banner-text {
+        display: block;
+        font-size: 2em;
+        width: 95%;
+        background-position: right;   
+    }
+
+    .banner-space p{
+        text-shadow: 2px 2px 5px rgb(224, 130, 228);
+    }
+
+    .envios-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        gap: 2em;
+    }
+
+    .envios p {
+        font-size: 1em;
+    }
+    
+    .envios .fas, .envios .fab {
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+    }
+
+    .productos-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-gap: 3px;
+    }
+  
+    .titulo {
+        white-space: wrap;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates';
+}
+
+li {
+    list-style: none;
+    padding: 2%;
+    font-weight: lighter;
+}
+
+li a:hover {
+    font-weight: bolder;
+}
+
+li {
+    font-weight: lighter;
+}
+
+.main-container {
+    color: #906545;
+    padding-left: auto;
+    padding-right: auto;
+    width: 87%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: auto;
+    grid-gap: 3%;
+    border-radius: 5px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;  
+}
+
+.parrafo, .lista {
+    text-align: justify;
+    width: 60%;
+    align-self: center;
+    font-size: large;
+}
+
+.lista {
+    align-items: center;
+}
+
+label p {
+    margin-bottom: 1%;
+}
+
+.form-grupo input {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 2%;
+    padding: 10px;
+}
+
+input.invalid, textarea.invalid {
+    border: 1px solid red;  
+}
+
+.oculto {
+    display: none;
+}
+
+.error-name {
+    color: red;
+    margin-bottom: 2%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;   
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.texto {
+    height: 100px;
+}
+
+.submit {
+    margin: 1% 0 0 0;
+}
+
+input[type=submit] {
+    background-color: #906545;
+    color: #D9CE9A;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: #D9CE9A;
+    color:#906545;
+}
+
+input.invalid {
+    border: 1px solid red;
+}
+.email1 {
+    width: 100%;
+}
+
+.gracias {
+    background-color: #906545;
+    color: #D9CE9A;
+    text-align: center;
+    padding: 3%;
+    margin-top: 25%;    
+    font-size: 1.5em;
+}
+
+@media (max-width: 760px) {
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul {
+        margin:0;
+        padding:0;
+    }
+
+    .lista {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;    
+    }
+
+    .fab, .fas {
+        font-size: normal;
+    }
+}

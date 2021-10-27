@@ -1,0 +1,250 @@
+
+/* FONTS MAIN: font-family: 'Montserrat Alternates', sans-serif; */
+/* Designed by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly */
+/*HANDWRITTING font-family: font-family: 'Pacifico', cursive; Regular 400*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*Contenedor hero*/
+.hero-containter {
+    padding-left: auto;
+    padding-right: auto;
+    margin: auto;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0.1, 0, 1, 0.4), rgba(0.4, 0.1, 1, 0.1)), url("../img/banner_lavanda.jpg");
+    height: 40%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-left: auto;
+    padding-top: auto;
+}
+
+.hero-texto {
+    text-align: center;
+    position: center; 
+    top: 40%;
+    left: 40%; 
+    color: rgb(248, 244, 248);
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 3%;
+    text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+
+.enamorate {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em ;
+  color: rgb(248, 244, 248);
+  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;   
+}
+
+
+/* TITULO SHOP */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  font-size: 3em;  
+  margin: 2%;
+}
+
+.banner p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.wraper {
+  margin: 4%;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+/*grid al shop*/
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  grid-gap: 5% 3%;
+  margin: 0 auto 30px auto;
+}
+
+
+/*TITULOS GRID*/
+h4 {
+  margin-block-start: 1em;
+  margin-left: 1em;
+  color: #906545;
+  text-shadow: 2px 2px 5px rgb(224, 130, 228);
+}
+
+#tienda {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #906545;
+  text-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  margin: 3%;
+}
+
+/*FOTOS GRID */
+.grid-cabello {
+  background-image: url(../img/shampoo4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto; 
+}
+
+/* ANIMATION */
+.grid-cabello:hover, .grid-cuerpo:hover, .grid-aceites:hover, .grid-intimo:hover, 
+.grid-sahumos:hover, .grid-ceramica:hover{
+  animation: Anim 5s ease 0s 1 normal;
+}
+
+@keyframes Anim {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: scale(1.1) translateY(-10px);
+    transform-origin: center;
+  }
+}
+
+.hair-link, .corporal-link, .alma-link{ 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  background-image: url('empty.gif');
+}  
+
+.grid-cuerpo {
+  background-image: url(../img/crema.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+}
+
+.grid-aceites {
+  background-image: url(../img/aceites.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+}
+
+.grid-ceramica {
+  background-image: url(../img/ceramica2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+}
+
+.grid-intimo {
+  background-image: url(../img/intimo3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+}
+
+
+.grid-sahumos {
+  background-image: url(../img/aromaterapia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+}
+ 
+.footer {
+  text-align: center;
+  padding-top: 2%;
+}
+
+/*media queries */
+@media (min-width: 601px) {
+  .hero-texto {
+    font-size: 20px;
+  }
+  .hero-image {
+    height: 10%;
+  }
+
+}
+
+@media (min-width: 401px) and (max-width: 960px) {
+  .mini-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40% 40%;
+    grid-gap: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+ 
+  .hero-containter {
+    z-index: 1;
+  }
+
+  .hero-texto {
+    font-size: 10px;
+    line-height: auto;
+  }
+
+  .banner  {
+    height: auto;
+    padding: auto;
+    font-size: 2em;
+    font-family:'Roboto', sans-serif; 
+    text-shadow: black;
+    color: #D9CE9A;
+    align-items: center;
+    text-align: center;
+    white-space: wrap;
+    margin: 2%;
+  }
+
+  .wraper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+  }
+
+  .mini-grid {
+    display: flex;
+    flex-flow: column wrap;
+    grid-gap: 4px;
+  }
+ 
+  .grid-cabello {
+    background-position: bottom;
+  }
+}
+
+ 
